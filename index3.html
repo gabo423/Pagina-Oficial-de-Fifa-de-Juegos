@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-physics-system@4.0.1/dist/aframe-physics-system.min.js"></script>
+    <title>Realidad Virtual de Fifa</title>
+</head>
+<body>
+    <header>
+        <h1>Realidad Virtual</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index1.html">Acerca de</a></li>
+                <li><a href="index2.html">Servicios</a></li>
+                <li><a href="index3.html">Realidad Virtual de Fifa</a></li>
+                <li><a href="index4.html">Galería de fotos</a></li>
+                <li><a href="index5.html">Fifa Descargar de Todo</a></li>
+                <li><a href="index6.html">Descargar de FIFA</a></li>
+                <li><a href="index7.html">Noticias de dial-up</a></li>
+                <li><a href="index8.html">Pagina especial</a></li>
+                
+            </ul>
+        </nav>
+
+
+
+        <a-scene>
+            <!-- Fondo del campo de fútbol -->
+            <a-plane position="0 0 -5" rotation="-90 0 0" width="10" height="10" color="#008000"></a-plane>
+    
+            <!-- Jugador 1 (Rojo) -->
+            <a-box position="-2 0.5 -5" depth="0.2" height="1" width="0.5" color="#FF0000"
+                   animation="property: position; to: -2 0.5 -4; dir: alternate; dur: 1000; loop: true"></a-box>
+    
+            <!-- Jugador 2 (Azul) -->
+            <a-box position="2 0.5 -5" depth="0.2" height="1" width="0.5" color="#0000FF"
+                   animation="property: position; to: 2 0.5 -4; dir: alternate; dur: 1000; loop: true"></a-box>
+    
+            <!-- Balón -->
+            <a-sphere position="0 0.5 -5" radius="0.2" color="#FFFFFF"
+                       animation="property: position; to: 0 0.5 -3; dir: alternate; dur: 2000; loop: true"></a-sphere>
+    
+            <!-- Cámara -->
+            <a-entity camera look-controls position="0 1.6 0"></a-entity>
+    
+            <!-- Luz -->
+            <a-light type="ambient" color="#FFF"></a-light>
+            <a-light type="directional" position="-1 1 1" intensity="0.5"></a-light>
+        </a-scene>
+             
+
+
+
+       
+
+
+
+
+
+
+
+
+
+       
+
+      
+</body>
+</html>
